@@ -1,0 +1,76 @@
+html, body {
+    margin: 10px;
+    font-family: Helvetica, Arial, sans-serif
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(1fr, 4fr);
+    grid-template-rows: repeat(1fr, 3fr, 1fr);
+    grid-template-areas: 
+        "image header"
+        "aside content"
+        "footer footer";
+    gap: 50px;
+    width: fit-content;
+    height: fit-content;
+    /*size of a A4 paper
+    width: 794px;
+    height: 1123px;
+    */
+    border: solid;
+}
+.profileimg {
+    width: 150px;
+    height: 200px;
+}
+.image {
+    grid-area: image;
+    border: solid;
+    border-top: hidden;
+    border-left: hidden;
+    width: fit-content;
+    height: fit-content;
+}
+.header {
+    grid-area: header;
+    text-align: center;
+    border: solid;
+    border-top: hidden;
+    border-right: hidden;
+}
+.aside {
+    grid-area: aside;
+    border: solid;
+    border-left: hidden;
+    padding: 10px;
+}
+.content {
+    grid-area: content;
+    border: solid;
+    border-radius: 60px;
+    padding: 20px;
+    margin-right: 20px;
+}
+.footerimg {
+    width: 100px;
+    height: 100px;
+}
+.footer {
+    grid-area: footer;
+    border: solid;
+    border-left: hidden;
+    border-bottom: hidden;
+    border-right: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: auto;
+}
+span {
+    font-size: 18;
+    font-weight: bolder;
+    font-style: italic;
+}
+.text-indent {
+    text-indent: 30px;
+}

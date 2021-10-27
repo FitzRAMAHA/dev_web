@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="Les avancées de la première page HTML de Fitz. Fitz se forme pour devenir un développeur web. Suivez Fitz dans son apprentissage du langage HTML"/>
+        <title>Page de Fitz</title>
+        <!--This following line is a code line that I found in the exemple of the head banner (explainned en the next comment)-->
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+        <!---->
+        <link href="./style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--Here I'm trying to make a sort of head banner that directs me to the Acceuil page or Projects page. But it's now working yet. I guess a need CSS for this.-->
+        <nav>
+            <p class="nav-item active contenu-top"><a href="#acceuil">Acceuil</a></p>
+            <p class="nav-item contenu-middle"><a href="#projets">Projets</a></p>
+            <p class="nav-item contenu-bottom"><a href="#contact">Contact</a></p>
+        </nav>
+        <!---->
+        <main>
+            <div id="acceuil">
+                <h1 class="red-title underline text-align-center transition box">Première page HTML de Fitz</h1>
+                <h2 class="underline text-align-center">Bienvenue</h2>
+                <!--Ici j'ai envie (YOLO) de faire 3 sections (gauche, milieu, droite). Voyons si j'y arrive.-->
+                <!--Je n'ai pas trouvé comment le faire. Je retente plus tard.-->
+                <h2><a href="https://fr.wikipedia.org/wiki/Texte" target="_blank">Qu'est ce qu'un texte?</a></h2>
+                <ol>
+                    <li>
+                        
+                        <h3>Texte définition</h3>
+                        <p>
+                            Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les structures propres à une langue (conjugaisons, construction et association des phrases…)1. Un texte n'a pas de longueur déterminée sauf dans le cas de poèmes à forme fixe comme le sonnet ou le haïku.
+                            L'étude formelle des textes s'appuie sur la linguistique, qui est l'approche scientifique du langage.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Étymologie</h3>
+                        <p>
+                            « Texte » est issu du mot latin « textum », dérivé du verbe « texere » qui signifie « tisser ». Le mot s'applique à l'entrelacement des fibres utilisées dans le tissage, voir par exemple Ovide : « Quo super iniecit textum rude sedula Baucis = (un siège) sur lequel Baucis empressée avait jeté un tissu grossier »2 ou au tressage (exemple chez Martial « Vimineum textum = panier d'osier tressé »). Le verbe a aussi le sens large de construire comme dans « basilicam texere = construire une basilique » chez Cicéron3.
+                            Le sens figuré d'éléments de langage organisés et enchaînés apparaît avant l'Empire romain : il désigne un agencement particulier du discours. Exemple : « epistolas texere = composer des épîtres » - Cicéron (ier siècle av. J.-C.)4 ou plus nettement chez Quintilien (ier siècle apr. J.-C.) : « verba in textu jungantur = l'agencement des mots dans la phrase »5.
+                            Les formes anciennes du Moyen Âge désignent au xiie siècle le volume qui contient le texte sacré des Évangiles, puis au xiiie siècle, le texte original d'un livre saint ou des propos de quelqu'un. Au xviie siècle le mot s’applique au passage d'un ouvrage pris comme référence et au début du xixe siècle le mot texte a son sens général d'« écrit »
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Texte littéraire</h3>
+                        <p>
+                            Un texte répond de façon plus ou moins pertinente à des critères qui en déterminent la qualité littéraire. On retient en particulier la structure d'ensemble, la syntaxe et la ponctuation, l'orthographe lexicale et grammaticale, la pertinence et la richesse du vocabulaire, la présence de figures de style, le registre de langue et la fonction recherchée (narrative, descriptive, expressive, argumentative, injonctive, poétique). C'est l'objet de l'analyse littéraire.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+            <div id="projets">
+                <h2 class="underline text-align-center">Mes different projets</h2>
+                <ul>
+                    <li class="underline text-align-center"><a href="./Maeva-Immo.html" target="_blank">Maeva-Immo</a></li>
+                    <li class="underline text-align-center"><a href="./Maeva-Farm.html" target="_blank">Maeva-Farm</a></li>
+                </ul>
+            </div>
+        </main>
+    </body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--The "text-align-center" style on CSS does not center the boutton. I need to find another way to center it on CSS-->
+    <div class="underline text-align-center">
+        <button class="boutton-rouge">Ne touchez pas au bouton rouge</button>
+    </div>
+    <!---->
+    
+    <footer id="contact" class="underline text-align-center">
+        
+        <!--I want to create my first forme here. Though, I need to learn php to process the data from the user-->
+        <form method="post" action="./contact.php">
+            <div>
+                <input type="radio" id="MME" name="MME">
+                <label for="MME">Mme</label> 
+                <input type="radio" id="MR" name="MR">
+                <label for="MR">Mr</label>
+            </div>
+            <div>
+                <label for="Name&Surname">Name and Surname</label>
+                <input type="text" id="Name&Surname" name="Name&Surname" placeholder="Name and Surname" required>
+            </div>
+            <div>
+                <label for="tel">Telephone number</label>
+                <input type="tel" id="tel" name="tel" placeholder="Telephone number">
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+            </div>
+            <div>
+                <label for="Password">Password</label>
+                <input type="password" id="Password" name="Password" placeholder="Password">
+            </div>
+            <div>
+                <label for="File">Message</label>
+                <input type="file" id="File" name="File" accept="image/png, image/jpeg">
+            </div>
+            <div>
+                <label for="Message">Message</label>
+                <textarea rows="5" cols="20" id="Message" name="Message" placeholder="Write your message ^^"></textarea>
+            </div>
+            <div>
+                <button type="submit">Soumettre</button>
+                <input type="submit" value="Submit again">
+            </div>
+        </form>
+        <!---->
+        
+        <p>Mais vous pouvez me contacter si vous voulez, je lache le 06 :</p>
+        <p><a href="tel:+0600000000" title="06 00 00 00 00">tel</a></p>
+        <p><a href="mailto:maeva-ylang@gmail.com" title="maeva-ylang@gmail.com">Envoyer un courriel</a></p>
+        </footer>
+</html>

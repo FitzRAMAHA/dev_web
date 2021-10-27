@@ -1,0 +1,9 @@
+body {
+	margin: auto;
+	/* display:flex;
+	flex-direction: column; */
+	display: grid;
+	-ms-grid-column: auto;
+	-ms-grid-row: auto;
+	grid-template-areas: "header main";
+}
